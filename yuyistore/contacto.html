@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Yuyistore</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="icon" type="image/png" href="fotos/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="fotos/logo.png" alt="Logo de la tienda">
+      <span class="slogan">Mejorando vidas</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="componentes.html">Componentes</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1 class="texto-contacto">Contáctanos</h1>
+    <p class="descripcion">Estamos aquí para ayudarte. Completa el formulario a continuación y nos pondremos en contacto contigo lo antes posible.</p>
+
+    <section class="contacto">
+      <form class="contact-form" onsubmit="alert('Gracias por contactarnos, te responderemos pronto'); return false;">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-contenido">
+      <p>&copy; 2025 Yuyistore. Todos los derechos reservados.</p>
+      <p>Tienda 100% Peruana</p>
+    </div>
+  </footer>
+</body>
+
+</html>
